@@ -5,16 +5,19 @@
 	"builders": [
 		{
 			"name": "default",
-			"dockerfile_path": "build-default.Dockerfile",
-			"mount_destination": "/go/src/github.com/joonas/fi/hellohttp",
-			"dev_command": [
-				"bash"
-			],
-			"dev_ports": ["8012:80"],
-			"pass_envs": [],
-			"contextless_build": true
+			"uses": "docker://fn61/buildkit-golang:20200212_0907_06f93bc3",
+			"mount_destination": "/workspace",
+			"workdir": "/workspace",
+			"commands": {
+				"build": ["bin/build.sh"],
+				"dev": ["bash"]
+			},
+			"dev_ports": ["8012:80"]
 		}
 	],
+	"os_arches": {
+		"linux-amd64": true
+	},
 	"docker_images": [
 		{
 			"image": "joonas/hellohttp",
