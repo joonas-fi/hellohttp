@@ -9,8 +9,6 @@ import (
 )
 
 func main() {
-	fmt.Printf("hello world\n")
-
 	requestsServed := prometheus.NewCounter(
 		prometheus.CounterOpts{
 			Name: "requests_served",
@@ -27,5 +25,9 @@ func main() {
 		requestsServed.Inc()
 	})
 
-	log.Fatal(http.ListenAndServe(":80", nil))
+	addr := ":80"
+
+	fmt.Printf("hello world HTTP server listening at %s\n", addr)
+
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
