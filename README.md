@@ -15,7 +15,7 @@ Example
 $ docker service create \
   --name hellohttp \
   --env "METRICS_ENDPOINT=/metrics" \
-  --network fn61 \
+  --network yourNetwork \
   --publish 8012:80 \
   "joonas/hellohttp:VERSION"
 ```
