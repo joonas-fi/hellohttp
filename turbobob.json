@@ -14,6 +14,9 @@
 				"build": ["bin/build.sh"],
 				"dev": ["bash"]
 			},
+			"dev_shell_commands": [
+				{ "command": "rel/hellohttp_linux-amd64", "important": true }
+			]
 		}
 	],
 	"os_arches": {
