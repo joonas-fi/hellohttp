@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/joonas-fi/hellohttp.svg?style=for-the-badge)](https://travis-ci.org/joonas-fi/hellohttp)
+![Build status](https://github.com/joonas-fi/hellohttp/workflows/Build/badge.svg)
 [![Download](https://img.shields.io/docker/pulls/joonas/hellohttp.svg?style=for-the-badge)](https://hub.docker.com/r/joonas/hellohttp/)
 
 A hello world HTTP server with Prometheus metrics.
