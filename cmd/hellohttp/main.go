@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	"github.com/function61/gokit/net/http/httputils"
-	"github.com/function61/gokit/os/osutil"
+"github.com/function61/gokit/os/osutil"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
