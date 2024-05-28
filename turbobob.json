@@ -24,7 +24,7 @@
 	},
 	"docker_images": [
 		{
-			"image": "joonas/hellohttp",
+			"image": "ghcr.io/joonas-fi/hellohttp",
 			"dockerfile_path": "Dockerfile",
 			"tag_latest": true
 		}

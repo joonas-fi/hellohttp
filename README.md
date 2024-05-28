@@ -1,5 +1,4 @@
 ![Build status](https://github.com/joonas-fi/hellohttp/workflows/Build/badge.svg)
-[![Download](https://img.shields.io/docker/pulls/joonas/hellohttp.svg?style=for-the-badge)](https://hub.docker.com/r/joonas/hellohttp/)
 
 A hello world HTTP server with Prometheus metrics.
 
@@ -17,7 +16,7 @@ $ docker service create \
   --env "METRICS_ENDPOINT=/metrics" \
   --network yourNetwork \
   --publish 8012:80 \
-  "joonas/hellohttp:VERSION"
+  "ghcr.io/joonas-fi/hellohttp:VERSION"
 ```
 
 Replace VERSION with a tag from Docker Hub link from top of this document.
